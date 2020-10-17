@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/luckdbxp/public_html/os
-    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp -R /home/luckdbxp/repositories/BitterliOS $DEPLOYPATH
