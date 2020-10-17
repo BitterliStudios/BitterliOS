@@ -670,6 +670,7 @@ function windowInfo() {
     <center><font size=\"5\">Current Website Version 0.4.6.0</font></center>\
     <center>Planned Implementations for next version (0.4.7.0):</center>\
     <ul>\
+	<li>Git Test.\
     <li>Add more demo projects.\
     </ul><br>\
     <center>Website changelog:</center>\
