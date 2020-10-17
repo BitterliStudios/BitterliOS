@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/user/public_html/os
-    - /bin/cp -R images $DEPLOYPATH
+    - export DEPLOYPATH=/home/luckdbxp/public_html/os
+    - /bin/cp -R * $DEPLOYPATH
