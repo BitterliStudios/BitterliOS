@@ -667,14 +667,15 @@ function windowInfo() {
     This page uses JavaScript and HTML magic. This is my first time really using JavaScript! :)<br>\
     <br>\
     <div class =\"changelog\">\
-    <center><font size=\"5\">Current Website Version 0.4.5.5</font></center>\
-    <center>Planned Implementations for next version (0.4.6.0):</center>\
+    <center><font size=\"5\">Current Website Version 0.4.6.0</font></center>\
+    <center>Planned Implementations for next version (0.4.7.0):</center>\
     <ul>\
     <li>Add more demo projects.\
     </ul><br>\
     <center>Website changelog:</center>\
     <center>Key: Red = Error, Blue = Feature Implemented, Purple = Fixes, Minor Changes</center>\
     <ul>\
+	<li><font color=\"#a40083\">0.4.6.0 - 17 October 2020 - Created git tree</font>\
     <li><font color=\"#a40083\">0.4.5.5 - 07 October 2020 - Fixed audio slider glitches</font>\
     <li><font color=\"#0052a4\">0.4.5.0 - 07 October 2020 - Added media player sliders, correct time values in text area</font>\
     <li><font color=\"#a40083\">0.4.4.0 - 05 October 2020 - Made Operation Center a closeable window, added desk icon</font>\
