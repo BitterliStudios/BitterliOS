@@ -1,0 +1,8 @@
+body {
+    background-image: url("http://bitterli.us/os/themes/snowy-mountain.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-color: rgb(85, 170, 170);
+}

@@ -1,0 +1,1196 @@
+<html>
+    <head>
+        <title>BitterliOS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="57x57" href="http://bitterli.us/os/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="http://bitterli.us/os/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="http://bitterli.us/os/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="http://bitterli.us/os/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="http://bitterli.us/os/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="http://bitterli.us/os/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="http://bitterli.us/os/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="http://bitterli.us/os/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="http://bitterli.us/os/favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="http://bitterli.us/os/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="http://bitterli.us/os/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="http://bitterli.us/os/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="http://bitterli.us/os/favicons/favicon-16x16.png">
+        <link rel="manifest" href="http://bitterli.us/os/favicons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="http://bitterli.us/os/favicons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#4385f0">
+        
+        <meta property="og:site_name" content="BitterliOS">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Bitterli Operating System">
+        <meta property="og:url" content="http://bitterli.us">
+        <meta name="description" content="Bitterli's Official Website running BitterliOS.">
+        <meta property="og:description" content="Bitterli's Official Webapge running on BitterliOS, a clone of Windows 98 that runs on JavaScript and HTML right in your browser.">
+        
+        <meta property="twitter:title" content="BitterliOS">
+        <meta property="twitter:description" content="Bitterli's Official Webapge running on BitterliOS.">
+        
+        <!-- What are you doing here? Anyway, if your OS is too old to load this font, it's fine. It adds to the experience -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press%20Start%202P">
+        
+        <script type="text/javascript" src="http://bitterli.us/os/mainStuff.js"></script>
+        
+        <!-- If you are snooping in the code, I know it's bad -->
+        <style>
+        
+            * {
+                font-family: 'VT323', sans-serif;
+            }
+            
+            #os {
+                cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;
+                width: 100%;
+                height: 100%;
+            }
+            
+            /* Window Contents */
+            
+            #window {
+                position: fixed;
+                right: 55px;
+                top: 50px;
+                background-image: url("http://bitterli.us/os/window.png");
+                width: 1000px;
+                height: 700px;
+            }
+            
+            .windowTopBar {
+                color: white;
+                position: relative;
+                width: 100%;
+                height: 24px;
+            }
+            
+            .windowbody {
+                position: relative;
+                top: -22px;
+                left: 20px;
+                height: 668px;
+                width: 960px;
+            }
+            
+            .windowTabRow {
+                width: 100%;
+                height: 18px;
+                border-radius: 25px;
+                border: 2px solid #420066;
+                padding: 5px;
+                position: relative;
+                top: 25px;
+            }
+            
+            #windowTabContent {
+                position: relative;
+                top: 22px;
+                left: 25px;
+                width: 90%;
+                height: 500px;
+            }
+            
+            .windowfooter {
+                position: relative;
+                bottom: -680px;
+                left: 15px;
+                right: 0px;
+                width: 95%;
+            }
+            
+            .closeWindowButton {
+                background-color: Transparent;
+                background-repeat:no-repeat;
+                border: none;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+                position: relative;
+                top: 2px;
+                left: 767px;
+            }
+            
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            .changelog::-webkit-scrollbar {
+                display: none;
+            }
+            
+            .changelog {
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+                border-left: 3px solid blue;
+                background-color: white;
+                border-radius: 8px;
+                overflow-y:scroll;
+                position: relative;
+                width: 675px;
+                height: 450px;
+                padding: 5px;
+                position: relative;
+                top: -75px;
+            }
+            
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            .news::-webkit-scrollbar {
+                display: none;
+            }
+            
+            .news {
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+                border-left: 5px solid blue;
+                border-top: 1px solid blue;
+                border-right: 5px solid blue;
+                border-bottom: 1px solid blue;
+                border-radius: 8px;
+                overflow-y:scroll;
+                position: relative;
+                width: 100%;
+                height: 445px;
+                padding: 5px;
+            }
+            
+            .windowSocails {
+                width: 100%;
+                height: 20px;
+                border-radius: 5px;
+                border: 3px solid #0070ff;
+                padding: 5px;
+                position: relative;
+                top: 10px;
+            }
+            
+            .windowContactForm {
+                position: relative;
+                top: 10px;
+            }
+            
+            /* Desktop Icons */
+            
+            .deskicons1 {
+                position: fixed;
+                left: 30px;
+                top: 30px;
+            }
+            .deskicons2 {
+                position: fixed;
+                left: 120px;
+                top: 30px;
+            }
+            
+            .deskicons3 {
+                position: fixed;
+                left: 220px;
+                top: 30px;
+            }
+            
+            .deskbutton {
+                background-color: Transparent;
+                background-repeat:no-repeat;
+                border: none;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+                color: white;
+            }
+            
+            /* Taskbar CSS */
+            
+            .taskbar1 {
+                position: fixed;
+                bottom: 0;
+                left: 0px;
+                right: 0px;
+                width: 100%;
+                height: 30px;
+                background: rgb(85, 85, 85);
+            }
+            .taskbar2 {
+                position: fixed;
+                bottom: 2px;
+                left: 1px;
+                right: 1px;
+                width: 100%;
+                height: 26px;
+                background: rgb(194, 198, 202);
+            }
+            
+            .startMenu {
+                position: fixed;
+                bottom: 4px;
+                left: 0px;
+            }
+            
+            #startBox {
+                position: fixed;
+                bottom: 26px;
+                left: 3px;
+                background-image: url("http://bitterli.us/os/startMenu.png");
+                width: 177px;
+                height: 341px;
+                
+            }
+            
+            .tooldiv1 {
+                position: fixed;
+                bottom: 4px;
+                left: 68px;
+            }
+            
+            .miniyt {
+                position: fixed;
+                left: 73px;
+                bottom: 7px;
+            }
+            
+            .minitwitch {
+                position: fixed;
+                left: 96px;
+                bottom: 7px;
+            }
+            
+            .minitwitter {
+                position: fixed;
+                left: 119px;
+                bottom: 7px;
+            }
+            
+            .tooldiv2 {
+                position: fixed;
+                bottom: 4px;
+                left: 151px;
+            }
+            
+            .taskbartime {
+                background-image: url("http://bitterli.us/os/taskbartime.png");
+                width: 102px;
+                height: 22px;
+                position: fixed;
+                bottom: 4px;
+                right: 3px;
+            }
+            
+            .volumeButton {
+                width: 16px;
+                height: 16px;
+                position: fixed;
+                bottom: 4px;
+                right: 3px;
+            }
+            
+            #volumeMenu {
+                background-image: url("http://bitterli.us/os/volumeWindow.png");
+                width: 81px;
+                height: 136px;
+                position: fixed;
+                bottom: 28px;
+                right: 50px;
+            }
+            
+            .volSlideContainer {
+                width: 100%;
+                position: relative;
+                top: 64px;
+                left: 4px;
+            }
+            
+            .volSlider {
+                -webkit-appearance: none;
+                width: 65px;
+                height: 4px;
+                background: url('http://bitterli.us/os/vSlideBG90.png');
+                transform: rotate(270deg);
+            }
+            
+            .volSlider::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 23px;
+                height: 24px;
+                background: url('http://bitterli.us/os/vSlideThumb90.png');
+                cursor: pointer;
+            }
+            
+            .volSlider::-moz-range-thumb {
+                width: 11px;
+                height: 21px;
+                background: url('http://bitterli.us/os/vSlideThumb90.png');
+                cursor: pointer;
+            }
+            
+            /* Toolbar Tab Stuff */
+            
+            #window1 {
+                position: fixed;
+                bottom: 4px;
+                left: 162px;
+                background-image: url("http://bitterli.us/os/windowtaskbar.png");
+                width: 160px;
+                height: 22px;
+            }
+            
+            #window2 {
+                position: fixed;
+                bottom: 4px;
+                left: 325px;
+                background-image: url("http://bitterli.us/os/windowtaskbar.png");
+                width: 160px;
+                height: 22px;
+            }
+            
+            #window3 {
+                position: fixed;
+                bottom: 4px;
+                left: 487px;
+                background-image: url("http://bitterli.us/os/windowtaskbar.png");
+                width: 160px;
+                height: 22px;
+            }
+            
+            #window4 {
+                position: fixed;
+                bottom: 4px;
+                left: 649px;
+                background-image: url("http://bitterli.us/os/windowtaskbar.png");
+                width: 160px;
+                height: 22px;
+            }
+            
+            #window5 {
+                position: fixed;
+                bottom: 4px;
+                left: 811px;
+                background-image: url("http://bitterli.us/os/windowtaskbar.png");
+                width: 160px;
+                height: 22px;
+            }
+            
+            #window6 {
+                position: fixed;
+                bottom: 4px;
+                left: 973px;
+                background-image: url("http://bitterli.us/os/windowtaskbar.png");
+                width: 160px;
+                height: 22px;
+            }
+            
+            /*
+            .window1-true {
+                position: fixed;
+                bottom: 4px;
+                left: 162px;
+                background-image: url("http://bitterli.us/os/windowtaskbaractive.png");
+                width: 160px;
+                height: 22px;
+            }
+            
+            .window1-false {
+                position: fixed;
+                bottom: 4px;
+                left: 162px;
+                background-image: url("http://bitterli.us/os/windowtaskbar.png");
+                width: 160px;
+                height: 22px;
+            }
+            
+            .window2-true {
+                position: fixed;
+                bottom: 4px;
+                left: 325px;
+                background-image: url("http://bitterli.us/os/windowtaskbaractive.png");
+                width: 160px;
+                height: 22px;
+            }
+            
+            .window2-false {
+                position: fixed;
+                bottom: 4px;
+                left: 325px;
+                background-image: url("http://bitterli.us/os/windowtaskbar.png");
+                width: 160px;
+                height: 22px;
+            }
+            
+            .window3-true {
+                position: fixed;
+                bottom: 4px;
+                left: 488px;
+                background-image: url("http://bitterli.us/os/windowtaskbaractive.png");
+                width: 160px;
+                height: 22px;
+            }
+            
+            .window3-false {
+                position: fixed;
+                bottom: 4px;
+                left: 488px;
+                background-image: url("http://bitterli.us/os/windowtaskbar.png");
+                width: 160px;
+                height: 22px;
+            }
+            */
+            
+            /* Legacy Announce Buttons */
+            
+            #announceBtn {
+                padding: 10px;
+                border: none;
+                background: rgb(59, 45, 57, 0.5);
+                color: #fff;
+                cursor: pointer;
+            }
+            
+            #announceBtn:hover {
+                background: rgb(221, 221, 221, 0.5);
+                color: black;
+            }
+            
+            /* Folder CSS */
+            
+            #folder {
+                background-image: url("http://bitterli.us/os/folder.png");
+                width: 642px;
+                height: 455px;
+                position: fixed;
+                top: 30px;
+                left: 30px;
+            }
+            
+            #folderName {
+                position: relative;
+                top: -15px;
+                left: 25px;
+                color: white;
+            }
+            
+            #folderAddress {
+                position: relative;
+                top: 38px;
+                left: 78px;
+                font-size: 14px;
+            }
+            
+            #folderNameBig {
+                width: 140px;
+                height: 41px;
+                position: relative;
+                top: 74px;
+                left: 19px;
+                font-size: 24px;
+            }
+            
+            #folderDesc {
+                width: 140px;
+                height: 41px;
+                position: relative;
+                top: 74px;
+                left: 19px;
+                font-size: 18px;
+            }
+            
+            .folderbutton {
+                background-color: Transparent;
+                background-repeat:no-repeat;
+                border: none;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+                width: 70px;
+                height: 62px;
+            }
+            
+            #folderContents {
+                width: 425px;
+                height: 312px;
+                position: relative;
+                top: -88px;
+                left: 200px;
+            }
+            
+            .closeFolderButton {
+                background-color: Transparent;
+                background-repeat:no-repeat;
+                border: none;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+                position: relative;
+                top: -47px;
+                left: 615px;
+            }
+            
+            /* Photo Viewer */
+            
+            #photoViewer {
+                background-image: url("http://bitterli.us/os/photoViewer.png");
+                width: 600px;
+                height: 500px;
+                position: fixed;
+                bottom: 75px;
+                left: 700px;
+            }
+            
+            #photoContent {
+                position: relative;
+                top: 6px;
+                left: 10px;
+                width: 580px;
+                height: 450px;
+            }
+            
+            .closePhotoButton {
+                background-color: Transparent;
+                background-repeat:no-repeat;
+                border: none;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+                position: relative;
+                top: -66px;
+                left: 561px;
+            }
+            
+            /* Audio Player */
+            
+            #audioPlayer {
+                background-image: url("http://bitterli.us/os/audioPlayer.png");
+                width: 294px;
+                height: 244px;
+                position: fixed;
+                top: 85px;
+                left: 800px;
+            }
+            
+            .audioControls {
+                background-color: Transparent;
+                background-repeat:no-repeat;
+                border: none;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+                position: relative;
+            }
+            
+            .closeAudioButton {
+                background-color: Transparent;
+                background-repeat:no-repeat;
+                border: none;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+                position: relative;
+                top: -30px;
+                left: 239px;
+            }
+            
+            /* Video Player */
+            
+            #videoPlayer {
+                background-image: url("http://bitterli.us/os/video-player.png");
+                width: 294px;
+                height: 429px;
+                position: fixed;
+                bottom: 95px;
+                left : 300px;
+            }
+            
+            .closeVideoButton {
+                background-color: Transparent;
+                background-repeat:no-repeat;
+                border: none;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+                position: relative;
+                top: -30px;
+                left: 239px;
+            }
+            
+            .videoControls {
+                background-color: Transparent;
+                background-repeat:no-repeat;
+                border: none;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+                position: relative;
+            }
+            
+            
+            .mediaSlideContainer {
+                cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;
+                position: relative;
+                width: 271px;
+                height: 15px;
+            }
+
+            .mediaSlider {
+              cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;
+              -webkit-appearance: none;
+              width: 100%;
+              height: 7px;
+              background: url('http://bitterli.us/os/mediaSliderBG.png');
+              outline: none;
+            }
+
+            .mediaSlider::-webkit-slider-thumb {
+              cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;
+              -webkit-appearance: none;
+              appearance: none;
+              width: 13px;
+              height: 15px;
+              border: 0;
+              background: url('http://bitterli.us/os/mediaSliderThumb.png');
+            }
+
+            .mediaSlider::-moz-range-thumb {
+              cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;
+              width: 13px;
+              height: 15px;
+              border: 0;
+              background: url('http://bitterli.us/os/mediaSliderThumb.png');
+            }
+            
+            /* Display Properties */
+            
+            #displayProperties {
+                background-image: url("http://bitterli.us/os/displayProperties.png");
+                width: 404px;
+                height: 448px;
+                position: fixed;
+                top: 10px;
+                left : 20px;
+            }
+            
+            .closeDisplayProperties {
+                background-color: Transparent;
+                background-repeat:no-repeat;
+                border: none;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+                position: relative;
+                top: 5px;
+                left: 375px;
+            }
+            
+            #bgTab {
+                background-image: url("http://bitterli.us/os/backgroundtab.png");
+                width: 386px;
+                height: 380px;
+                position: fixed;
+                top: 39px;
+                left : 29px;
+            }
+            
+            .tabButton {
+                background-color: Transparent;
+                background-repeat:no-repeat;
+                border: none;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+            }
+            
+            .pictureBG-none {
+                background-image: url("http://bitterli.us/os/bgNone.png");
+                width: 280px;
+                height: 16px;
+                border: none;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+                text-align: left;
+                padding-left: 22px;
+            }
+            
+            .pictureBG {
+                background-image: url("http://bitterli.us/os/bgSelect.png");
+                width: 280px;
+                height: 16px;
+                border: none;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+                text-align: left;
+                padding-left: 22px;
+            }
+            
+            .bottomButtons {
+                position: relative;
+                left: 141px;
+                top: 163px;
+            }
+            
+            .dpButton {
+                background-color: Transparent;
+                background-repeat:no-repeat;
+                border: none;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+                color: white;
+            }
+            
+        </style>
+        </head>
+        
+        <body>
+            <div id="os">
+                <div class="deskicons1"><center>
+                    <div class="yt">
+                        <button type="button" class="deskbutton" onclick="yt()" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                            <img src="http://bitterli.us/os/ytlogo.png" width="48px" height="48px"><br>
+                            YouTube.link
+                        </button>
+                    </div>
+                    <br>
+                    <div class="twitter">
+                        <button type="button" class="deskbutton" onclick="twitter()" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                            <img src="http://bitterli.us/os/twitterlogo.png" width="48px" height="48px"><br>
+                            Twitter.link
+                        </button>
+                    </div>
+                    <br>
+                    <div class="twitch">
+                        <button type="button" class="deskbutton" onclick="twitch()" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                            <img src="http://bitterli.us/os/twitchlogo.png" width="48px" height="48px"><br>
+                            Twitch.link
+                        </button>
+                    </div>
+                    <br>
+                    <div class="soundcloud">
+                        <button type="button" class="deskbutton" onclick="soundcloud()" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                            <img src="http://bitterli.us/os/sclogo.png" width="48px" height="48px"><br>
+                            Soundcloud.link
+                        </button>
+                    </div>
+                    <br>
+                    <div class="spotify">
+                        <button type="button" class="deskbutton" onclick="spotify()" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                            <img src="http://bitterli.us/os/spotifylogo.png" width="48px" height="48px"><br>
+                            Spotify.link
+                        </button>
+                    </div>
+                    <br>
+                    <div class="bandcamp">
+                        <button type="button" class="deskbutton" onclick="bandcamp()" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                            <img src="http://bitterli.us/os/bclogo.png" width="48px" height="48px"><br>
+                            Bandcamp.link
+                        </button>
+                    </div>
+                    <br>
+                </center></div>
+                <div class="deskicons2"><center>
+                    <div class="mainWindow">
+                        <button type="button" class="deskbutton" onclick="windowState(0)" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                            <img src="http://bitterli.us/os/win98png/channels-2.png" width="48px" height="48px"><br>
+                            Operation Center
+                        </button>
+                    </div>
+                    <br>
+                    <div class="theme">
+                        <button type="button" class="deskbutton" onclick="theme(-1)" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                            <img src="http://bitterli.us/os/win98png/themes-4.png" width="48px" height="48px"><br>
+                            Themes
+                        </button>
+                    </div>
+                    <br>
+                    <div class="memeFolder">
+                        <button type="button" class="deskbutton" onclick="fileOpen(1)" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                            <img src="http://bitterli.us/os/win98png/directory_closed-4.png" width="48px" height="48px"><br>
+                            Memes
+                        </button>
+                    </div>
+                    <br>
+                    <div class="musicFolder">
+                        <button type="button" class="deskbutton" onclick="fileOpen(2)" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                            <img src="http://bitterli.us/os/win98png/directory_closed-4.png" width="48px" height="48px"><br>
+                            Demo Projects
+                        </button>
+                    </div>
+                    <br>
+                </center></div>
+                <!--
+                <div class="deskicons3"><center>
+                    
+                </center></div>
+                -->
+                
+                <div id="window">
+                    <div class="windowbody">
+                        <div class="windowfooter">
+                            <hr>
+                            <center>(C) 2020 Bitterli.us || All Rights Reserved.</center>
+                        </div>
+                        <div class="windowTabRow">
+                            <button type="button" class="deskbutton" onclick="windowHome()" style="cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;">
+                                <img src="http://bitterli.us/os/win98png/computer-4.png" width="16px" height="16px">&nbsp;&nbsp;<font color="#00000" size="4" style="position: relative; bottom: 3px;">Home Page</font>
+                            </button>
+                            <button type="button" class="deskbutton" onclick="windowAboutMe()" style="cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;">
+                                <img src="http://bitterli.us/os/win98png/notepad_file-2.png" width="16px" height="16px">&nbsp;&nbsp;<font color="#00000" size="4" style="position: relative; bottom: 3px;">About Me</font>
+                            </button>
+                            <button type="button" class="deskbutton" onclick="windowContactMe()" style="cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;">
+                                <img src="http://bitterli.us/os/win98png/outlook_express-4.png" width="16px" height="16px">&nbsp;&nbsp;<font color="#00000" size="4" style="position: relative; bottom: 3px;">Contact Me</font>
+                            </button>
+                            <button type="button" class="deskbutton" onclick="windowInfo()" style="cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;">
+                                <img src="http://bitterli.us/os/win98png/msg_information-0.png" width="16px" height="16px">&nbsp;&nbsp;<font color="#00000" size="4" style="position: relative; bottom: 3px;">Page Info</font>
+                            </button>
+                        </div>
+                        <div id="windowTabContent">
+                            <script>windowHome();</script>
+                        </div>
+                        <div id="windowHeader" class="windowTopBar" style="top: -544px; left: -10px;">
+                            <img src="http://bitterli.us/os/win98png/channels-2.png" width="14px" height="14px" style="position: relative; top: 2px; left: -3px;">BitterliOS Operation Center
+                            <button type="button" class="closeWindowButton" onclick="windowState(1)" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                                <img src="http://bitterli.us/os/close.png" width="16px" height="14px">
+                            </button>
+                        </div>
+                        <script>dragElement(document.getElementById("window"));</script>
+                    </div>
+                </div>
+                
+                <div id="folder">
+                    <!-- Hide the folder on first load -->
+                    <script>bruh(1)</script>
+                    <div class="windowTopBar" id="folderHeader">
+                        <p id="folderName"></p>
+                        <button type="button" class="closeFolderButton" onclick="bruh(1)" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                            <img src="http://bitterli.us/os/close.png" width="16px" height="14px">
+                        </button>
+                    </div>
+                    
+                    <script>
+                        dragElement(document.getElementById("folder"));
+                    </script>
+                    
+                    <p id="folderAddress"></p>
+                    <p id="folderNameBig"></p>
+                    <p id="folderDesc"></p>
+                    <div id="folderContents">
+                    </div>
+                </div>
+                
+                
+                <div id="photoViewer">
+                    <!-- Hide the photo viewer on first load -->
+                    <script>bruh(10)</script>
+                    
+                    <div class="windowTopBar" id="photoViewerHeader" style="top: 5px; left: 9px;">
+                        <img src="http://bitterli.us/os/win98png/camera3-2.png" width="16px" height="16px">
+                        <p id="photoName" style="position: relative; top: -35px; left: 20px; color: white;"></p>
+                        <button type="button" class="closePhotoButton" onclick="bruh(10)" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                            <img src="http://bitterli.us/os/close.png" width="16px" height="14px">
+                        </button>
+                    </div>
+                    
+                    <script>
+                        dragElement(document.getElementById("photoViewer"));
+                    </script>
+                    
+                    <div id="photoContent">
+                    </div>
+                </div>
+                
+                <div id="audioPlayer">
+                    <!-- Hide the audio Player on first load -->
+                    <script>bruh(20)</script>
+                     
+                     <audio id="audioFile">
+                     </audio>
+                    
+                    <div class="windowTopBar" id="audioPlayerHeader" style="top: -14px; left: 25px;">
+                        <p id="audioFileName"></p>
+                        <button type="button" class="closeAudioButton" onclick="bruh(20)" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                            <img src="http://bitterli.us/os/close.png" width="16px" height="14px">
+                        </button>
+                    </div>
+                    
+                    <script>
+                        dragElement(document.getElementById("audioPlayer"));
+                    </script>
+                    
+                    <div class="mediaSlideContainer" style="top: 35px; left: 8px">
+                        <input type="range" min="0" max="100" value="0" class="mediaSlider" id="audioSlider">
+                    </div>
+                    <script>audioTiming()</script>
+                    
+                    <div style="position: relative; top: 10px">
+                        <div class="audioTextElements" style="color: white; font-size: 14px;">
+                            <p id="audioShow" style="position: relative; top: 65px; left: 88px;"></p>
+                            <p id="audioClip" style="position: relative; top: 56px; left: 88px;"></p>
+                            <p id="audioAuthor" style="position: relative; top: 41px; left: 88px;"></p>
+                            <p id="audioCopyright" style="position: relative; top: 26px; left: 88px;"></p>
+                            
+                            <p id="audioPosition" style="position: relative; top: 16px; left: 185px;">00:00</p>
+                            <p id="audioTotal" style="position: relative; top: -14px; left: 226px;">01:00</p>
+                        </div>
+                        
+                        <div class="Controls">
+                            <button type="button" class="audioControls" style="top: -173px; left: -3px; cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;" onclick="audioControls(1)">
+                                <img src="http://bitterli.us/os/play.png" width="21px" height="21px">
+                            </button>
+                            <button type="button" class="audioControls" style="top: -173px; left: -23px; cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;" onclick="audioControls(0)">
+                                <img src="http://bitterli.us/os/pause.png" width="21px" height="21px">
+                            </button>
+                            <button type="button" class="audioControls" style="top: -173px; left: -45px; cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;" onclick="audioControls(2)">
+                                <img src="http://bitterli.us/os/stop.png" width="21px" height="21px">
+                            </button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div id="videoPlayer">
+                    <!-- Hide -->
+                    <script>bruh(30)</script>
+                    
+                    <div class="windowTopBar" id="videoPlayerHeader" style="top: -14px; left: 25px;">
+                        <p id="videoFileName"></p>
+                        <button type="button" class="closeVideoButton" onclick="bruh(30)" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                            <img src="http://bitterli.us/os/close.png" width="16px" height="14px">
+                        </button>
+                    </div>
+                    
+                    <script>
+                        dragElement(document.getElementById("videoPlayer"));
+                    </script>
+                    
+                    <div style="position: relative; top: 25px">
+                        <video width="285px" height="186px" id="videoFile" style="position: relative; top: 2px; left: 5px; width: 285px; height: 186px;">
+                    </video>
+                    </div>
+                    
+                    <div style="position: relative; top: 25px">
+                        <div class="videoTextElements" style="color: white; font-size: 14px; position: relative; top: -1px;">
+                            <p id="videoShow" style="position: relative; top: 66px; left: 88px;"></p>
+                            <p id="videoClip" style="position: relative; top: 56px; left: 88px;"></p>
+                            <p id="videoAuthor" style="position: relative; top: 41px; left: 88px;"></p>
+                            <p id="videoCopyright" style="position: relative; top: 26px; left: 88px;"></p>
+                            
+                            <p id="videoTime" style="position: relative; top: 16px; left: 185px;">00:00</p>
+                            <p id="videoTotal" style="position: relative; top: -14px; left: 226px;">01:00</p>
+                        </div>
+                        
+                        <div class="Controls" style="position: relative; top: -199px;">
+                            <button type="button" class="videoControls" style="top: 25px; left: -3px; cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;" onclick="videoControls(1)">
+                                <img src="http://bitterli.us/os/play.png" width="21px" height="21px">
+                            </button>
+                            <button type="button" class="videoControls" style="top: 25px; left: -23px; cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;" onclick="videoControls(0)">
+                                <img src="http://bitterli.us/os/pause.png" width="21px" height="21px">
+                            </button>
+                            <button type="button" class="videoControls" style="top: 25px; left: -45px; cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;" onclick="videoControls(2)">
+                                <img src="http://bitterli.us/os/stop.png" width="21px" height="21px">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="mediaSlideContainer" style="top: -190px; left: 8px">
+                        <input type="range" min="0" max="100" value="10" class="mediaSlider" id="videoSlider">
+                    </div>
+                    <script>videoTiming()</script>
+                    
+                </div>
+                
+                <div id="displayProperties">
+                    <script>bruh(40)</script>
+                    <div class="windowTopBar" id="displayPropertiesHeader">
+                        <button type="button" class="closeDisplayProperties" onclick="bruh(40)" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                            <img src="http://bitterli.us/os/close.png" width="16px" height="14px">
+                        </button>
+                    </div>
+                    <div id="dpTab">
+                        <div id="bgTab">
+                            <button type="button" class="closeDisplayProperties" onclick="displayProperties(1)" style="position: relative; top: 2; left: 70px; cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                                <img src="http://bitterli.us/os/screenSaverButton.png" width="75px" height="19px">
+                            </button> 
+                            
+                            <div id="previewBG" style="position: relative; left: 117px; top: 29px">
+                                <img src="http://bitterli.us/os/themes/noneBG.png" width="152px" height="112px">
+                            </div>
+                            
+                            <div class="bgList" style="overflow-y: scroll; overflow-x: hidden; width: 331px; height: 92px; line-height: 16px; position: relative; top: 127px; left: 27px;">
+                                <button type="button" class="pictureBG-none" onclick="background(0)" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                                </button>
+                                <button type="button" class="pictureBG" onclick="background(1)" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                                    Starfield.png
+                                </button>
+                                <button type="button" class="pictureBG" onclick="background(2)" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                                    clouds.jpg
+                                </button>
+                                <button type="button" class="pictureBG" onclick="background(3)" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                                    mall.png
+                                </button> 
+                                <button type="button" class="pictureBG" onclick="background(4)" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                                    forest.jpg
+                                </button>
+                                <button type="button" class="pictureBG" onclick="background(5)" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                                    snowy-mountain.jpg
+                                </button>
+                                <button type="button" class="pictureBG" onclick="background(6)" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                                    stars.png
+                                </button> 
+                            </div>
+                            
+                            <div class="bottomButtons">
+                                <button type="button" class="dpButton" onclick="dpBottom(0)" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                                    <img src="http://bitterli.us/os/dp-OkayButton.png" width="75px" height="23px">
+                                </button>
+                                
+                                <button type="button" class="dpButton" onclick="dpBottom(1)" style="position: relative; left: -16px; cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                                    <img src="http://bitterli.us/os/dp-CancelButton.png" width="75px" height="23px">
+                                </button>
+                                <button type="button" class="dpButton" onclick="dpBottom(2)" style="position: relative; left: -33px; cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                                    <img src="http://bitterli.us/os/dp-ApplyButton.png" width="75px" height="23px">
+                                </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="taskbar1">
+                    <div class="taskbar2">
+                        <div class="StartMenu">
+                            <button type="button" class="deskbutton" onclick="start()" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;"> 
+                                <img src="http://bitterli.us/os/start.png"><br>
+                            </button>
+                        </div>
+                        
+                        <div class="tooldiv1">
+                            <img src="http://bitterli.us/os/tooldiv.png">
+                        </div>
+                        
+                        <div class="miniyt">
+                            <button type="button" class="deskbutton" onclick="yt()" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                                <img src="http://bitterli.us/os/ytlogo.png" width="16px" height="16px"><br>
+                            </button>
+                        </div>
+                        
+                        <div class="minitwitch">
+                            <button type="button" class="deskbutton" onclick="twitch()" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                                <img src="http://bitterli.us/os/twitchlogo.png" width="16px" height="16px"><br>
+                            </button>
+                        </div>
+                        
+                        <div class="minitwitter">
+                            <button type="button" class="deskbutton" onclick="twitter()" style="cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                                <img src="http://bitterli.us/os/twitterlogo.png" width="16px" height="16px"><br>
+                            </button>
+                        </div>
+                        
+                        <div class="tooldiv2">
+                            <img src="http://bitterli.us/os/tooldiv.png">
+                        </div>
+                        
+                        <div id="window1">
+                            <img id="window1Icon" width="14px" height="14px" style="position: relative; bottom: -4px; left: 5px;">
+                            <p id="window1Name" style="position: relative; bottom: 29px; left: 24px;">
+                            </p>
+                        </div>
+                        
+                        <div id="window2">
+                            <img id="window2Icon" width="14px" height="14px" style="position: relative; bottom: -4px; left: 5px;">
+                            <p id="window2Name" style="position: relative; bottom: 29px; left: 24px;">
+                            </p>
+                        </div>
+                        
+                        <div id="window3">
+                            <img id="window3Icon" width="14px" height="14px" style="position: relative; bottom: -4px; left: 5px;">
+                            <p id="window3Name" style="position: relative; bottom: 29px; left: 24px;">
+                            </p>
+                        </div>
+                        
+                        <div id="window4">
+                            <img id="window4Icon" width="14px" height="14px" style="position: relative; bottom: -4px; left: 5px;">
+                            <p id="window4Name" style="position: relative; bottom: 29px; left: 24px;">
+                            </p>
+                        </div>
+                        
+                        <div id="window5">
+                            <img id="window5Icon" width="14px" height="14px" style="position: relative; bottom: -4px; left: 5px;">
+                            <p id="window5Name" style="position: relative; bottom: 29px; left: 24px;">
+                            </p>
+                        </div>
+                        
+                        <div id="window6">
+                            <img id="window6Icon" width="14px" height="14px" style="position: relative; bottom: -4px; left: 5px;">
+                            <p id="window6Name" style="position: relative; bottom: 29px; left: 24px;">
+                            </p>
+                        </div>
+                        
+                        <script>
+                            updateToolBarTab();
+                        </script>
+                        
+                        <div class="taskbartime">
+                            <font style="position: relative; left: 43px; bottom: 15px;"><p id="time"></p></font>
+                            <script>time()</script>
+                        </div>
+                        
+                        <div class="volumebutton">
+                            <button type="button" class="deskbutton" onclick="volumeMenu()" style="position: relative; bottom: 3px; right: 70px; cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                                <div id="volumeToggle">
+                                    <img src="http://bitterli.us/os/volume-playing.png" width="16px" height="16px">
+                                </div>
+                            </button>
+                        </div>
+                        
+                        <div id="volumeMenu">
+                            <script>volumeMenu()</script>
+                            
+                            <div class="volSlideContainer">
+                                <input type="range" min="0" max="10" value="10" class="volSlider" id="volRange">
+                            </div>
+    
+                            <script>
+                                /*I don't know why but this needs to be here in order for it to work.
+                                * Do not ask me why.
+                                */
+                                var volSlider = document.getElementById("volRange");
+                                volSlider.oninput = function() {
+                                    if (this.value == 0) {
+                                        muteAll();
+                                    } else {
+                                        if (!muted) {
+                                            var audio = document.getElementById("audioFile");
+                                            audio.volume = this.value / 10;
+                                            var video = document.getElementById("videoFile");
+                                            video.volume = this.value / 10;
+                                        } else {
+                                            muteAll();
+                                            var audio = document.getElementById("audioFile");
+                                            audio.volume = this.value / 10;
+                                            var video = document.getElementById("videoFile");
+                                            video.volume = this.value / 10;
+                                        }
+                                    }
+                                }
+                            </script>
+                            
+                            <button type="button" class="deskbutton" onclick="muteAll()" style="position: relative; top: 109px; left: 1px; cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;">
+                                <div id="muteToggle">
+                                    <img src="http://bitterli.us/os/checkMarkFalse.png" width="13px" height="13px">
+                                </div>
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Start menu should always be at the bottom -->
+                <div id=startBox>
+                    <!-- Hide the startmenu on first load -->
+                    <script>hideStart()</script>
+                </div>
+            </div>
+            
+            <script>initialize();</script>
+            
+        </body>
+</html>
