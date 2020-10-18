@@ -26,7 +26,7 @@ function initialize() {
     link.id   = cssId;
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'http://bitterli.us/os/themes/none.css';
+    link.href = 'themes/none.css';
     link.media = 'all';
     head.appendChild(link);
     
@@ -83,7 +83,7 @@ function dragElement(elmnt) {
 }
 
 var toolbarTabNames = ["BitterliOS Center"];
-var toolbarTabIcons = ["http://bitterli.us/os/win98png/channels-2.png"];
+var toolbarTabIcons = ["win98png/channels-2.png"];
 var toolbarTabTypes = ["Control Center"];
 
 function addToolBarTab(name, icons, type) {
@@ -258,44 +258,44 @@ function fileOpen(i) {
         document.getElementById("folderNameBig").innerHTML = "Memes";
         document.getElementById("folderDesc").innerHTML = "All the memes you could imagine.";
         
-        var inject1 = "<button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(10)\" style=\"cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;\"><center>\
-                        <img src=\"http://bitterli.us/os/win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
+        var inject1 = "<button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(10)\" style=\"cursor: url('cursor/w98normal.cur'), default;\"><center>\
+                        <img src=\"win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
                         mcj_garfield<br>.jpg\
                     </center></button>\
-                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(11)\" style=\"cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;\"><center>\
-                        <img src=\"http://bitterli.us/os/win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
+                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(11)\" style=\"cursor: url('cursor/w98normal.cur'), default;\"><center>\
+                        <img src=\"win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
                         spoonge.png<br>&nbsp;\
                     </center></button>\
-                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(12)\" style=\"cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;\"><center>\
-                        <img src=\"http://bitterli.us/os/win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
+                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(12)\" style=\"cursor: url('cursor/w98normal.cur'), default;\"><center>\
+                        <img src=\"win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
                         spoonge-color.png\
                     </center></button>\
-                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(13)\" style=\"cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;\"><center>\
-                        <img src=\"http://bitterli.us/os/win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
+                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(13)\" style=\"cursor: url('cursor/w98normal.cur'), default;\"><center>\
+                        <img src=\"win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
                         peter-eat.png\
                     </center></button>\
-                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(14)\" style=\"cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;\"><center>\
-                        <img src=\"http://bitterli.us/os/win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
+                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(14)\" style=\"cursor: url('cursor/w98normal.cur'), default;\"><center>\
+                        <img src=\"win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
                         homer-eat.png\
                     </center></button>\
-                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(15)\" style=\"cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;\"><center>\
-                        <img src=\"http://bitterli.us/os/win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
+                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(15)\" style=\"cursor: url('cursor/w98normal.cur'), default;\"><center>\
+                        <img src=\"win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
                         bort.png<br>&nbsp;\
                     </center></button>\
-                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(16)\" style=\"cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;\"><center>\
-                        <img src=\"http://bitterli.us/os/win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
+                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(16)\" style=\"cursor: url('cursor/w98normal.cur'), default;\"><center>\
+                        <img src=\"win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
                         BITCH.png<br>&nbsp;\
                     </center></button>\
-                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(17)\" style=\"cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;\"><center>\
-                        <img src=\"http://bitterli.us/os/win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
+                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(17)\" style=\"cursor: url('cursor/w98normal.cur'), default;\"><center>\
+                        <img src=\"win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
                         bruh-sponge.png\
                     </center></button>\
-                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(18)\" style=\"cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;\"><center>\
-                        <img src=\"http://bitterli.us/os/win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
+                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(18)\" style=\"cursor: url('cursor/w98normal.cur'), default;\"><center>\
+                        <img src=\"win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
                         Sqoodword<br>.png\
                     </center></button>\
-                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(19)\" style=\"cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;\"><center>\
-                        <img src=\"http://bitterli.us/os/win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
+                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(19)\" style=\"cursor: url('cursor/w98normal.cur'), default;\"><center>\
+                        <img src=\"win98png/camera3-2.png\" width=\"32px\" height=\"32px\"><br>\
                         YO_POGO<br>.png\
                     </center></button>";
         document.getElementById("folderContents").innerHTML = inject1;
@@ -303,7 +303,7 @@ function fileOpen(i) {
         var x1 = document.getElementById("folder");
         x1.style.display = "block";
         
-        addToolBarTab("Memes", "http://bitterli.us/os/win98png/directory_open_cool-4.png", "Folder");
+        addToolBarTab("Memes", "win98png/directory_open_cool-4.png", "Folder");
         
     } else if (i == 2) {
         document.getElementById("folderName").innerHTML = "Demo Projects";
@@ -311,12 +311,12 @@ function fileOpen(i) {
         document.getElementById("folderNameBig").innerHTML = "Demo Projects";
         document.getElementById("folderDesc").innerHTML = "A few of my music tracks.";
         
-        var inject2 = "<button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(20)\" style=\"cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;\"><center>\
-                        <img src=\"http://bitterli.us/os/win98png/midi_bl-2.png\" width=\"32px\" height=\"32px\"><br>\
+        var inject2 = "<button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(20)\" style=\"cursor: url('cursor/w98normal.cur'), default;\"><center>\
+                        <img src=\"win98png/midi_bl-2.png\" width=\"32px\" height=\"32px\"><br>\
                         spongebob<br>remix.mp3\
                     </center></button>\
-                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(30)\" style=\"cursor: url('http://bitterli.us/os/cursor/w98normal.cur'), default;\"><center>\
-                        <img src=\"http://bitterli.us/os/win98png/video_-2.png\" width=\"32px\" height=\"32px\"><br>\
+                    <button type=\"button\" class=\"folderbutton\" onclick=\"fileOpen(30)\" style=\"cursor: url('cursor/w98normal.cur'), default;\"><center>\
+                        <img src=\"win98png/video_-2.png\" width=\"32px\" height=\"32px\"><br>\
                         mac<br>tonight.mp4\
                     </center></button>";
         document.getElementById("folderContents").innerHTML = inject2;
@@ -324,80 +324,80 @@ function fileOpen(i) {
         var x2 = document.getElementById("folder");
         x2.style.display = "block";
         
-        addToolBarTab("Demo Projects", "http://bitterli.us/os/win98png/directory_open_cool-4.png", "Folder");
+        addToolBarTab("Demo Projects", "win98png/directory_open_cool-4.png", "Folder");
     } else if (i == 10) {
         document.getElementById("photoName").innerHTML = "mcj_garfield.jpg";
-        document.getElementById("photoContent").innerHTML = "<img src=\"http://bitterli.us/os/memes/mcj_garfield.jpg\" width=\"440\" height=\"456\">";
+        document.getElementById("photoContent").innerHTML = "<img src=\"memes/mcj_garfield.jpg\" width=\"440\" height=\"456\">";
         var x10 = document.getElementById("photoViewer");
         x10.style.display = "block";
-        addToolBarTab("mcj_garfield.jpg", "http://bitterli.us/os/win98png/camera3-2.png", "Photo Viewer");
+        addToolBarTab("mcj_garfield.jpg", "win98png/camera3-2.png", "Photo Viewer");
         
     } else if (i == 11) {
         document.getElementById("photoName").innerHTML = "spoonge.png (ORIGINAL ART)";
-        document.getElementById("photoContent").innerHTML = "<img src=\"http://bitterli.us/os/memes/spoonge.png\" width=\"575\" height=\"350\">";
+        document.getElementById("photoContent").innerHTML = "<img src=\"memes/spoonge.png\" width=\"575\" height=\"350\">";
         var x11 = document.getElementById("photoViewer");
         x11.style.display = "block";
-        addToolBarTab("spoonge.png", "http://bitterli.us/os/win98png/camera3-2.png", "Photo Viewer");
+        addToolBarTab("spoonge.png", "win98png/camera3-2.png", "Photo Viewer");
         
     } else if (i == 12) {
         document.getElementById("photoName").innerHTML = "spoonge-color.png (Colored by Momo)";
-        document.getElementById("photoContent").innerHTML = "<img src=\"http://bitterli.us/os/memes/spoonge-color.png\" width=\"575\" height=\"350\">";
+        document.getElementById("photoContent").innerHTML = "<img src=\"memes/spoonge-color.png\" width=\"575\" height=\"350\">";
         var x12 = document.getElementById("photoViewer");
         x12.style.display = "block";
-        addToolBarTab("spoonge-color.png", "http://bitterli.us/os/win98png/camera3-2.png", "Photo Viewer");
+        addToolBarTab("spoonge-color.png", "win98png/camera3-2.png", "Photo Viewer");
         
     } else if (i == 13) {
         document.getElementById("photoName").innerHTML = "peter-eats.png (by Momo)";
-        document.getElementById("photoContent").innerHTML = "<img src=\"http://bitterli.us/os/memes/peter-eats.png\" width=\"460\" height=\"460\">";
+        document.getElementById("photoContent").innerHTML = "<img src=\"memes/peter-eats.png\" width=\"460\" height=\"460\">";
         var x13 = document.getElementById("photoViewer");
         x13.style.display = "block";
-        addToolBarTab("peter-eats.png", "http://bitterli.us/os/win98png/camera3-2.png", "Photo Viewer");
+        addToolBarTab("peter-eats.png", "win98png/camera3-2.png", "Photo Viewer");
         
     } else if (i == 14) {
         document.getElementById("photoName").innerHTML = "homer-eats.png (by Momo)";
-        document.getElementById("photoContent").innerHTML = "<img src=\"http://bitterli.us/os/memes/homer-eats.png\" width=\"460\" height=\"460\">";
+        document.getElementById("photoContent").innerHTML = "<img src=\"memes/homer-eats.png\" width=\"460\" height=\"460\">";
         var x14 = document.getElementById("photoViewer");
         x14.style.display = "block";
-        addToolBarTab("homer-eats.png", "http://bitterli.us/os/win98png/camera3-2.png", "Photo Viewer");
+        addToolBarTab("homer-eats.png", "win98png/camera3-2.png", "Photo Viewer");
         
     } else if (i == 15) {
         document.getElementById("photoName").innerHTML = "bort.png (by Momo)";
-        document.getElementById("photoContent").innerHTML = "<img src=\"http://bitterli.us/os/memes/bort.png\" width=\"460\" height=\"460\">";
+        document.getElementById("photoContent").innerHTML = "<img src=\"memes/bort.png\" width=\"460\" height=\"460\">";
         var x15 = document.getElementById("photoViewer");
         x15.style.display = "block";
-        addToolBarTab("bort.png", "http://bitterli.us/os/win98png/camera3-2.png", "Photo Viewer");
+        addToolBarTab("bort.png", "win98png/camera3-2.png", "Photo Viewer");
         
     } else if (i == 16) {
         document.getElementById("photoName").innerHTML = "BITCH.png (by Momo)";
-        document.getElementById("photoContent").innerHTML = "<img src=\"http://bitterli.us/os/memes/BITCH.png\" width=\"460\" height=\"460\">";
+        document.getElementById("photoContent").innerHTML = "<img src=\"memes/BITCH.png\" width=\"460\" height=\"460\">";
         var x16 = document.getElementById("photoViewer");
         x16.style.display = "block";
-        addToolBarTab("BITCH.png", "http://bitterli.us/os/win98png/camera3-2.png", "Photo Viewer");
+        addToolBarTab("BITCH.png", "win98png/camera3-2.png", "Photo Viewer");
         
     } else if (i == 17) {
         document.getElementById("photoName").innerHTML = "bruh-sponge.png (by Momo)";
-        document.getElementById("photoContent").innerHTML = "<img src=\"http://bitterli.us/os/memes/bruh-sponge.png\" width=\"560\" height=\"460\">";
+        document.getElementById("photoContent").innerHTML = "<img src=\"memes/bruh-sponge.png\" width=\"560\" height=\"460\">";
         var x17 = document.getElementById("photoViewer");
         x17.style.display = "block";
-        addToolBarTab("bruh-sponge.png", "http://bitterli.us/os/win98png/camera3-2.png", "Photo Viewer");
+        addToolBarTab("bruh-sponge.png", "win98png/camera3-2.png", "Photo Viewer");
         
     } else if (i == 18) {
         document.getElementById("photoName").innerHTML = "Sqoodword.png (by Momo)";
-        document.getElementById("photoContent").innerHTML = "<img src=\"http://bitterli.us/os/memes/Sqoodword.png\" width=\"479\" height=\"460\">";
+        document.getElementById("photoContent").innerHTML = "<img src=\"memes/Sqoodword.png\" width=\"479\" height=\"460\">";
         var x18 = document.getElementById("photoViewer");
         x18.style.display = "block";
-        addToolBarTab("Sqoodword.png", "http://bitterli.us/os/win98png/camera3-2.png", "Photo Viewer");
+        addToolBarTab("Sqoodword.png", "win98png/camera3-2.png", "Photo Viewer");
         
     } else if (i == 19) {
         document.getElementById("photoName").innerHTML = "YO_POGO.png (by Momo)";
-        document.getElementById("photoContent").innerHTML = "<img src=\"http://bitterli.us/os/memes/YO_POGO.png\" width=\"346\" height=\"460\">";
+        document.getElementById("photoContent").innerHTML = "<img src=\"memes/YO_POGO.png\" width=\"346\" height=\"460\">";
         var x19 = document.getElementById("photoViewer");
         x19.style.display = "block";
-        addToolBarTab("YO_POGO.png", "http://bitterli.us/os/win98png/camera3-2.png", "Photo Viewer");
+        addToolBarTab("YO_POGO.png", "win98png/camera3-2.png", "Photo Viewer");
         
     } else if (i == 20) {
-        var inject20 = "<source src=\"http://bitterli.us/os/demo%20projects/sponge.ogg\" type=\"audio/ogg\">\
-        <source src=\"http://bitterli.us/os/demo%20projects/sponge.mp3\" type=\"audio/mpeg\">\
+        var inject20 = "<source src=\"demo%20projects/sponge.ogg\" type=\"audio/ogg\">\
+        <source src=\"demo%20projects/sponge.mp3\" type=\"audio/mpeg\">\
         Ironically, your browser doesn't support this audio swag.";
         document.getElementById("audioFile").innerHTML = inject20;
         
@@ -409,10 +409,10 @@ function fileOpen(i) {
         
         var x20 = document.getElementById("audioPlayer");
         x20.style.display = "block";
-        addToolBarTab("sponge.mp3", "http://bitterli.us/os/win98png/media_player-0.png", "Audio Player");
+        addToolBarTab("sponge.mp3", "win98png/media_player-0.png", "Audio Player");
         
     } else if (i == 30) {
-        var inject30 = "<source src=\"http://bitterli.us/os/demo%20projects/mac%20tonight.ogg\" type=\"video/ogg\">\
+        var inject30 = "<source src=\"demo%20projects/mac%20tonight.ogg\" type=\"video/ogg\">\
                     Your browser does not support HTML video.";
         document.getElementById("videoFile").innerHTML = inject30;
         
@@ -424,7 +424,7 @@ function fileOpen(i) {
         
         var x30 = document.getElementById("videoPlayer");
         x30.style.display = "block";
-        addToolBarTab("mac tonight.mp4", "http://bitterli.us/os/win98png/media_player-0.png", "Video Player");
+        addToolBarTab("mac tonight.mp4", "win98png/media_player-0.png", "Video Player");
     }
 }
 
@@ -528,7 +528,7 @@ function windowState(i) {
         xf.style.display = "none";
     } else {
         windowHome();
-        addToolBarTab("BitterliOS Center", "http://bitterli.us/os/win98png/channels-2.png", "Control Center");
+        addToolBarTab("BitterliOS Center", "win98png/channels-2.png", "Control Center");
         var xt = document.getElementById("window");
         xt.style.display = "block";
     }
@@ -542,28 +542,28 @@ function windowHome() {
         <font style=\"position: relative; bottom: 2px;\">\
             <center>\
                 <font color=\"#00000\" size=\"5\" style=\"position: relative; bottom: 4px;\">|</font>\
-                <button type=\"button\" class=\"deskbutton\" onclick=\"yt()\" style=\"cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;\">\
-                    <img src=\"http://bitterli.us/os/ytlogo.png\" width=\"20px\" height=\"20px\">\
+                <button type=\"button\" class=\"deskbutton\" onclick=\"yt()\" style=\"cursor: url('cursor/w98hand.cur'), pointer;\">\
+                    <img src=\"ytlogo.png\" width=\"20px\" height=\"20px\">\
                 </button>\
                 <font color=\"#00000\" size=\"5\" style=\"position: relative; bottom: 4px;\">|</font>\
-                <button type=\"button\" class=\"deskbutton\" onclick=\"twitter()\" style=\"cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;\">\
-                    <img src=\"http://bitterli.us/os/twitterlogo.png\" width=\"20px\" height=\"20px\">\
+                <button type=\"button\" class=\"deskbutton\" onclick=\"twitter()\" style=\"cursor: url('cursor/w98hand.cur'), pointer;\">\
+                    <img src=\"twitterlogo.png\" width=\"20px\" height=\"20px\">\
                 </button>\
                 <font color=\"#00000\" size=\"5\" style=\"position: relative; bottom: 4px;\">|</font>\
-                <button type=\"button\" class=\"deskbutton\" onclick=\"twitch()\" style=\"cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;\">\
-                    <img src=\"http://bitterli.us/os/twitchlogo.png\" width=\"20px\" height=\"20px\">\
+                <button type=\"button\" class=\"deskbutton\" onclick=\"twitch()\" style=\"cursor: url('cursor/w98hand.cur'), pointer;\">\
+                    <img src=\"twitchlogo.png\" width=\"20px\" height=\"20px\">\
                 </button>\
                 <font color=\"#00000\" size=\"5\" style=\"position: relative; bottom: 4px;\">|</font>\
-                <button type=\"button\" class=\"deskbutton\" onclick=\"soundcloud()\" style=\"cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;\">\
-                            <img src=\"http://bitterli.us/os/sclogo.png\" width=\"20px\" height=\"20px\">\
+                <button type=\"button\" class=\"deskbutton\" onclick=\"soundcloud()\" style=\"cursor: url('cursor/w98hand.cur'), pointer;\">\
+                            <img src=\"sclogo.png\" width=\"20px\" height=\"20px\">\
                 </button>\
                 <font color=\"#00000\" size=\"5\" style=\"position: relative; bottom: 4px;\">|</font>\
-                <button type=\"button\" class=\"deskbutton\" onclick=\"spotify()\" style=\"cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;\">\
-                    <img src=\"http://bitterli.us/os/spotifylogo.png\" width=\"20px\" height=\"20px\">\
+                <button type=\"button\" class=\"deskbutton\" onclick=\"spotify()\" style=\"cursor: url('cursor/w98hand.cur'), pointer;\">\
+                    <img src=\"spotifylogo.png\" width=\"20px\" height=\"20px\">\
                 </button>\
                 <font color=\"#00000\" size=\"5\" style=\"position: relative; bottom: 4px;\">|</font>\
-                <button type=\"button\" class=\"deskbutton\" onclick=\"bandcamp()\" style=\"cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;\">\
-                    <img src=\"http://bitterli.us/os/bclogo.png\" width=\"20px\" height=\"20px\">\
+                <button type=\"button\" class=\"deskbutton\" onclick=\"bandcamp()\" style=\"cursor: url('cursor/w98hand.cur'), pointer;\">\
+                    <img src=\"bclogo.png\" width=\"20px\" height=\"20px\">\
                 </button>\
                 <font color=\"#00000\" size=\"5\" style=\"position: relative; bottom: 4px;\">|</font>\
             </center>\
@@ -598,21 +598,21 @@ function windowHome() {
                         <div>\
                             <font size=\"5\" color=\"#fffff\">\"its samplable\" (2020)</font><br><br>\
                             <img src=\"http://bitterli.us/icons/its_samplable_100px.png\"><br><br>\
-                            <a href=\"https://open.spotify.com/album/6wwCRzgPYPv97cwykIEk8G\"><button id=\"announceBtn\" style=\"cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/spotify.png\" alt=\"Spotify\" height=\"50\" width=\"50\"></button></a>\
-                            <a href=\"https://music.apple.com/us/album/its-samplable/1525446739\"><button id=\"announceBtn\" style=\"cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/apple-music.png\" alt=\"Apple Music\" height=\"50\" width=\"50\"></button></a>\
-                            <a href=\"https://play.google.com/store/music/album/Bitterli_Its_Samplable?id=Btcupinayhagxtgneqrmyx2xkyu\"><button id=\"announceBtn\" style=\"cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/google-play-music.png\" alt=\"Google Play\" height=\"50\" width=\"50\"></button></a>\
-                            <a href=\"https://soundcloud.com/bitterli/sets/its-samplable\"><button id=\"announceBtn\" style=\"cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/soundcloud.png\" alt=\"Soundcloud\" height=\"50\" width=\"50\"></button></a>\
-                            <a href=\"https://bitterli.bandcamp.com/album/its-samplable\"><button id=\"announceBtn\" style=\"cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/bandcamp.png\" alt=\"Bandcamp\" height=\"50\" width=\"50\"></button></a>\
+                            <a href=\"https://open.spotify.com/album/6wwCRzgPYPv97cwykIEk8G\"><button id=\"announceBtn\" style=\"cursor: url('cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/spotify.png\" alt=\"Spotify\" height=\"50\" width=\"50\"></button></a>\
+                            <a href=\"https://music.apple.com/us/album/its-samplable/1525446739\"><button id=\"announceBtn\" style=\"cursor: url('cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/apple-music.png\" alt=\"Apple Music\" height=\"50\" width=\"50\"></button></a>\
+                            <a href=\"https://play.google.com/store/music/album/Bitterli_Its_Samplable?id=Btcupinayhagxtgneqrmyx2xkyu\"><button id=\"announceBtn\" style=\"cursor: url('cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/google-play-music.png\" alt=\"Google Play\" height=\"50\" width=\"50\"></button></a>\
+                            <a href=\"https://soundcloud.com/bitterli/sets/its-samplable\"><button id=\"announceBtn\" style=\"cursor: url('cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/soundcloud.png\" alt=\"Soundcloud\" height=\"50\" width=\"50\"></button></a>\
+                            <a href=\"https://bitterli.bandcamp.com/album/its-samplable\"><button id=\"announceBtn\" style=\"cursor: url('cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/bandcamp.png\" alt=\"Bandcamp\" height=\"50\" width=\"50\"></button></a>\
                         </div>\
                         <br>\
                             <div>\
                                 <font size=\"5\" color=\"#fffff\">\"Television\" (2019)</font><br><br>\
                                 <img src=\"http://bitterli.us/icons/television_100px.jpg\"><br><br>\
-                                <a href=\"https://open.spotify.com/album/1JkpJabcTEVThlRZLQuUHo\"><button id=\"announceBtn\" style=\"cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/spotify.png\" alt=\"Spotify\" height=\"50\" width=\"50\"></button></a>\
-                                <a href=\"https://music.apple.com/us/album/television/1525000231\"><button id=\"announceBtn\" style=\"cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/apple-music.png\" alt=\"Apple Music\" height=\"50\" width=\"50\"></button></a>\
-                                <a href=\"https://play.google.com/store/music/album/Bitterli_Television?id=Bfuwohv6flaldd7ltj4e6za3vuu\"><button id=\"announceBtn\" style=\"cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/google-play-music.png\" alt=\"Google Play\" height=\"50\" width=\"50\"></button></a>\
-                                <a href=\"https://soundcloud.com/bitterli/sets/television\"><button id=\"announceBtn\" style=\"cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/soundcloud.png\" alt=\"Soundcloud\" height=\"50\" width=\"50\"></button></a>\
-                                <a href=\"https://bitterli.bandcamp.com/album/television\"><button id=\"announceBtn\" style=\"cursor: url('http://bitterli.us/os/cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/bandcamp.png\" alt=\"Bandcamp\" height=\"50\" width=\"50\"></button></a>\
+                                <a href=\"https://open.spotify.com/album/1JkpJabcTEVThlRZLQuUHo\"><button id=\"announceBtn\" style=\"cursor: url('cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/spotify.png\" alt=\"Spotify\" height=\"50\" width=\"50\"></button></a>\
+                                <a href=\"https://music.apple.com/us/album/television/1525000231\"><button id=\"announceBtn\" style=\"cursor: url('cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/apple-music.png\" alt=\"Apple Music\" height=\"50\" width=\"50\"></button></a>\
+                                <a href=\"https://play.google.com/store/music/album/Bitterli_Television?id=Bfuwohv6flaldd7ltj4e6za3vuu\"><button id=\"announceBtn\" style=\"cursor: url('cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/google-play-music.png\" alt=\"Google Play\" height=\"50\" width=\"50\"></button></a>\
+                                <a href=\"https://soundcloud.com/bitterli/sets/television\"><button id=\"announceBtn\" style=\"cursor: url('cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/soundcloud.png\" alt=\"Soundcloud\" height=\"50\" width=\"50\"></button></a>\
+                                <a href=\"https://bitterli.bandcamp.com/album/television\"><button id=\"announceBtn\" style=\"cursor: url('cursor/w98hand.cur'), pointer;\"><img src=\"http://bitterli.us/icons/bandcamp.png\" alt=\"Bandcamp\" height=\"50\" width=\"50\"></button></a>\
                             </div>\
                             <br>\
                         </center></div>\
@@ -624,7 +624,7 @@ function windowHome() {
 }
 
 function windowAboutMe() {
-    var inject = "<img style= \" float: right; top: 20px; position:relative; \" src= \"http://bitterli.us/os/400pxlogo.png\" height=\"200px\" width=\"200px\">\
+    var inject = "<img style= \" float: right; top: 20px; position:relative; \" src= \"400pxlogo.png\" height=\"200px\" width=\"200px\">\
     <font size=\"8\">About Bitterli</font><br>\
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello, I am a small content creator with a passion for making music and YouTube videos.\
     I first started making YouTube videos as far back as 2010 but didn't go all in until 2013. I\
@@ -661,7 +661,7 @@ function windowInfo() {
     //Purple <font color=\"#a40083\">
     //Blue <font color=\"#0052a4\">
     //Red <font color=\"#c20d00\">
-    var inject = "<img style= \" float: right; right: -40px; top: 20px; position:relative; \" src= \"http://bitterli.us/os/BitterliOS-400px.png\" height=\"200px\" width=\"200px\">\
+    var inject = "<img style= \" float: right; right: -40px; top: 20px; position:relative; \" src= \"BitterliOS-400px.png\" height=\"200px\" width=\"200px\">\
     <font size=\"8\">Website information</font><br>\
     This website was created entirely from scratch. I got basically no help with the code.<br>\
     This page uses JavaScript and HTML magic. This is my first time really using JavaScript! :)<br>\
@@ -746,7 +746,7 @@ function theme(i) {
         var newlink = document.createElement("link");
         newlink.setAttribute("rel", "stylesheet");
         newlink.setAttribute("type", "text/css");
-        newlink.setAttribute("href", "http://bitterli.us/os/themes/none.css");
+        newlink.setAttribute("href", "themes/none.css");
     
         document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
         currentBG = 0;
@@ -756,7 +756,7 @@ function theme(i) {
         var newlink = document.createElement("link");
         newlink.setAttribute("rel", "stylesheet");
         newlink.setAttribute("type", "text/css");
-        newlink.setAttribute("href", "http://bitterli.us/os/themes/Starfield.css");
+        newlink.setAttribute("href", "themes/Starfield.css");
     
         document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
         currentBG = 1;
@@ -766,7 +766,7 @@ function theme(i) {
         var newlink = document.createElement("link");
         newlink.setAttribute("rel", "stylesheet");
         newlink.setAttribute("type", "text/css");
-        newlink.setAttribute("href", "http://bitterli.us/os/themes/clouds.css");
+        newlink.setAttribute("href", "themes/clouds.css");
     
         document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
         currentBG = 2;
@@ -776,7 +776,7 @@ function theme(i) {
         var newlink = document.createElement("link");
         newlink.setAttribute("rel", "stylesheet");
         newlink.setAttribute("type", "text/css");
-        newlink.setAttribute("href", "http://bitterli.us/os/themes/mall.css");
+        newlink.setAttribute("href", "themes/mall.css");
     
         document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
         currentBG = 3;
@@ -786,7 +786,7 @@ function theme(i) {
         var newlink = document.createElement("link");
         newlink.setAttribute("rel", "stylesheet");
         newlink.setAttribute("type", "text/css");
-        newlink.setAttribute("href", "http://bitterli.us/os/themes/forest.css");
+        newlink.setAttribute("href", "themes/forest.css");
     
         document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
         currentBG = 4;
@@ -796,7 +796,7 @@ function theme(i) {
         var newlink = document.createElement("link");
         newlink.setAttribute("rel", "stylesheet");
         newlink.setAttribute("type", "text/css");
-        newlink.setAttribute("href", "http://bitterli.us/os/themes/snowy-mountain.css");
+        newlink.setAttribute("href", "themes/snowy-mountain.css");
     
         document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
         currentBG = 5;
@@ -806,14 +806,14 @@ function theme(i) {
         var newlink = document.createElement("link");
         newlink.setAttribute("rel", "stylesheet");
         newlink.setAttribute("type", "text/css");
-        newlink.setAttribute("href", "http://bitterli.us/os/themes/stars.css");
+        newlink.setAttribute("href", "themes/stars.css");
     
         document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
         currentBG = 6;
     } else {
         var x= document.getElementById("displayProperties");
         x.style.display = "block";
-        addToolBarTab("Display Properties", "http://bitterli.us/os/win98png/themes-4.png", "Display Properties")
+        addToolBarTab("Display Properties", "win98png/themes-4.png", "Display Properties")
     }
 }
 
@@ -824,31 +824,31 @@ function background(i) {
     var inject = " ";
     
     if (i == 0) {
-        inject = "<img src=\"http://bitterli.us/os/themes/noneBG.png\" width=\"152px\" height=\"112px\">";
+        inject = "<img src=\"themes/noneBG.png\" width=\"152px\" height=\"112px\">";
         document.getElementById("previewBG").innerHTML = inject;
         currentPreview = 0;
     } else if (i == 1) {
-        inject = "<img src=\"http://bitterli.us/os/themes/Starfield.png\" width=\"152px\" height=\"112px\">";
+        inject = "<img src=\"themes/Starfield.png\" width=\"152px\" height=\"112px\">";
         document.getElementById("previewBG").innerHTML = inject;
         currentPreview = 1;
     } else if (i == 2) {
-        inject = "<img src=\"http://bitterli.us/os/themes/clouds.jpg\" width=\"152px\" height=\"112px\">";
+        inject = "<img src=\"themes/clouds.jpg\" width=\"152px\" height=\"112px\">";
         document.getElementById("previewBG").innerHTML = inject;
         currentPreview = 2;
     } else if (i == 3) {
-        inject = "<img src=\"http://bitterli.us/os/themes/mall.png\" width=\"152px\" height=\"112px\">";
+        inject = "<img src=\"themes/mall.png\" width=\"152px\" height=\"112px\">";
         document.getElementById("previewBG").innerHTML = inject;
         currentPreview = 3;
     } else if (i == 4) {
-        inject = "<img src=\"http://bitterli.us/os/themes/forest.jpg\" width=\"152px\" height=\"112px\">";
+        inject = "<img src=\"themes/forest.jpg\" width=\"152px\" height=\"112px\">";
         document.getElementById("previewBG").innerHTML = inject;
         currentPreview = 4;
     } else if (i == 5) {
-        inject = "<img src=\"http://bitterli.us/os/themes/snowy-mountain.jpg\" width=\"152px\" height=\"112px\">";
+        inject = "<img src=\"themes/snowy-mountain.jpg\" width=\"152px\" height=\"112px\">";
         document.getElementById("previewBG").innerHTML = inject;
         currentPreview = 5;
     } else if (i == 6) {
-        inject = "<img src=\"http://bitterli.us/os/themes/stars.png\" width=\"152px\" height=\"112px\">";
+        inject = "<img src=\"themes/stars.png\" width=\"152px\" height=\"112px\">";
         document.getElementById("previewBG").innerHTML = inject;
         currentPreview = 6;
     }
@@ -957,8 +957,8 @@ var volBeforeV;
 function muteAll() {
     if (!muted) {
         muted = true;
-        document.getElementById("muteToggle").innerHTML = "<img src=\"http://bitterli.us/os/checkMarkTrue.png\" width=\"13px\" height=\"13px\">";
-        document.getElementById("volumeToggle").innerHTML = "<img src=\"http://bitterli.us/os/volume-muted.png\" width=\"16px\" height=\"16px\">";
+        document.getElementById("muteToggle").innerHTML = "<img src=\"checkMarkTrue.png\" width=\"13px\" height=\"13px\">";
+        document.getElementById("volumeToggle").innerHTML = "<img src=\"volume-muted.png\" width=\"16px\" height=\"16px\">";
         var audio = document.getElementById("audioFile");
         volBeforeA = audio.volume;
         audio.volume = 0.0;
@@ -967,8 +967,8 @@ function muteAll() {
         video.volume = 0.0;
     } else {
         muted = false;
-        document.getElementById("muteToggle").innerHTML = "<img src=\"http://bitterli.us/os/checkMarkFalse.png\" width=\"13px\" height=\"13px\">";
-        document.getElementById("volumeToggle").innerHTML = "<img src=\"http://bitterli.us/os/volume-playing.png\" width=\"16px\" height=\"16px\">";
+        document.getElementById("muteToggle").innerHTML = "<img src=\"checkMarkFalse.png\" width=\"13px\" height=\"13px\">";
+        document.getElementById("volumeToggle").innerHTML = "<img src=\"volume-playing.png\" width=\"16px\" height=\"16px\">";
         if (volBeforeA == 0 && volBeforeV == 0 ) {
             var audio = document.getElementById("audioFile");
             audio.volume = 0.1;
